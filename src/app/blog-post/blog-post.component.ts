@@ -15,4 +15,8 @@ export class BlogPostComponent implements OnInit {
     this.blogs.push(new Blog('Blog 2', 'Summary 2'));
     this.blogs.push(new Blog('Blog 3', 'Summary 3'));
   }
+
+  expand(blog: Blog) {
+    alert('Show Complete ' + blog.title + ' .');
+  }
 }
